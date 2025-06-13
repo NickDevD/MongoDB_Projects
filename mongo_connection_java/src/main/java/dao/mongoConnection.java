@@ -10,7 +10,6 @@ public class mongoConnection {
 
     private static final String CONNECTION_URI = "mongodb://localhost:27017";
     private static final String DATABASE_NAME = "store";
-    private static final String COLLECTION_NAME = "auto";
 
     private MongoClient mongoClient;
     private MongoDatabase database;
