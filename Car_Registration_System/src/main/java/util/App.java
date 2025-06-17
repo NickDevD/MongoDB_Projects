@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        try(Scanner input = new Scanner(System.in)){
 
         MongoConnection mc = new MongoConnection();
         AutoSys operations = new AutoSys(mc);
@@ -25,7 +25,6 @@ public class App {
 
             String option = input.next();
             input.nextLine();
-
             switch (option) {
 
                 case "1":
@@ -61,17 +60,26 @@ public class App {
                     System.out.println("Digite a placa do veículo para remover: ");
                     String deleteByPlaca = input.nextLine().trim();
                     operations.deleteAuto(deleteByPlaca);
-                    System.out.println("Veiculo removido com sucesso!");
+                    System.out.println("\nVeiculo removido com sucesso!");
                     break;
 
                 case "3":
                     running = false;
+                    System.out.println("\nPrograma finalizado com sucesso!");
+                    break;
+
+                default:
+                    System.out.println("\nEntrada inválida!");
+                    System.out.println("Digite apenas opções que estão no menu de operações");
                     break;
             }
 
 
         }
 
+        } catch (Exception e) {
+            System.out.println("Erro: " + e.getMessage());
+        }
 
     }
 }
