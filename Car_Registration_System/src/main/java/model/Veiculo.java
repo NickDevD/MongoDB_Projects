@@ -68,8 +68,8 @@ public class Veiculo {
      * Método estático que converte um objeto org.bson.Document em um objeto Automovel Java.
      * Este é um método de fábrica (factory method) que permite reconstruir um objeto Automovel
      * a partir de um documento recuperado do MongoDB.
-     *
      */
+
     public static Veiculo fromDocument(Document document) {
         // Cria uma nova instância de Automovel usando o construtor,
         // extraindo os valores dos campos do Document.
