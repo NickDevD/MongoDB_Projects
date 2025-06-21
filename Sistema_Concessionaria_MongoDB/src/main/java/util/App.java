@@ -4,8 +4,6 @@ import dao.AutoSys;
 import dao.MongoConnection;
 import model.Clientes;
 import model.Veiculo;
-
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class App {
