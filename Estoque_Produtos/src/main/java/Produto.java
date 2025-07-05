@@ -1,5 +1,3 @@
-package main.java;
-
 import org.bson.Document;
 
 public class Produto {

@@ -73,11 +73,10 @@ public class App {
                         break;
 
                         case "3":
-                            running = false;
                             System.out.println("\nPrograma finalizado com sucesso!");
                             break;
-
                     }
+                    break;
 
                 case "2":
 
@@ -106,10 +105,10 @@ public class App {
                             break;
 
                         case "3":
-                            running = false;
                             System.out.println("\nPrograma finalizado com sucesso!");
                             break;
                     }
+                    break;
 
                 case "3":
                     running = false;
@@ -121,7 +120,6 @@ public class App {
                     System.out.println("Digite apenas opções que estão no menu de operações");
                     break;
             }
-
 
         }
 
